@@ -14,8 +14,19 @@
        
         a:visited {
             color: yellow;
-        } a{
-            color: red;
+        } 
+        li:nth-child(4n+1){
+            color: red
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: lightgreen;
+        }
+        ::selection{
+            color: yellow;
+            text-shadow: 2px 2px 2px black;
         }
     </style>
 </head>
@@ -26,5 +37,34 @@
     <br>
     <a href="https://www.google.com/" target="_blank">Google</a>
     <a href="https://www.youtube.com/">YT</a>
+
+    <ul>
+        <li>child-1</li>
+        <li>child-2</li>
+        <li>child-3</li>
+        <li>child-4</li>
+        <li>child-5</li>
+        <li>child-6</li>
+        <li>child-7</li>
+        <li>child-8</li>
+        <li>child-9</li>
+        <li>child-10</li>
+    </ul>
+    <main>
+        <h1>position</h1>
+
+        <ol>
+            <li>static: <small>is default</small></li>
+            <li>absulute: <small>is hiding his position and can be change to its root (normally in root(parent tag/div) static is full display for positioning)</small></li>
+            <li>relative: <small>it will not give its positionto anyone but it will move compare to its position</small></li>
+            <li>fixed: <small>it will remain ficx in display</small></li>
+            <li>sticky: <small>it will remain like sticky as you know but it will work on the div which he is appointed to remain </small></li>
+        </ol>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, iusto pariatur sapiente aspernatur doloremque facilis perferendis? Deleniti ipsum officia doloremque dolorem ab sed? Facere, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, iusto pariatur sapiente aspernatur doloremque facilis perferendis? Deleniti ipsum officia doloremque dolorem ab sed? Facere, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, iusto pariatur sapiente aspernatur doloremque facilis perferendis? Deleniti ipsum officia doloremque dolorem ab sed? Facere, dignissimos.</p>
+        </section>
+    </main>
 </body>
 </html>
